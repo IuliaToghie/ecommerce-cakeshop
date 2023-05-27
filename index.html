@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="cake, sweet cakes, macarons, candy, shop">
+        <meta name="description" content="macaron cake shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="IuliaToghie">
+
+        <!-- Title -->
+        <title>Macaron Cake Shop</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="./images/Favicon.png"> 
+
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap">
+        
+        <!-- Font Awsome -->
+        <script src="https://kit.fontawesome.com/e2f8b34b68.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <!-- Navigation Header -->
+        <div id="header" class="navigation-header">
+            <div class="navigation-top">
+                <a href="/"><img class="img-fluid logo" src="/images/logoWhite.gif" alt="Logo" /></a>
+
+                <ul class="navigation-elements d-flex">
+                    <li class="element"><a class="link" href="./login.html"><i class="fas fa-user-circle"></i></a></li>
+
+                    <li class="element">
+                        <a id="cart-button" class="link" href="./cart.html">
+                            <div id="cart-products-count">0</div>
+
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+
+                    <li class="element"><a class="link" href="./contact.html"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="toggle-container d-flex">
+                <button class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+            <div class="navigation-bottom">
+                <ul class="navigation-elements">
+                    <li class="element">
+                        <a class="link" href="./allProducts.html">Products</a>
+                    </li>
+
+                    <li class="element">
+                        <a class="link" href="./spacialBox.html">Packages</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slider Carousel -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item overlay active">
+                    <img src="/images/carousel_1.webp" class="d-block w-100" alt="carousel 1">
+
+                    <div class="carousel-caption">
+                        <p class="title">It's Delish!</p>
+                      
+                        <p class="caption">Pink macaroons for a pink life.</p>
+                      
+                        <a href="./allProducts.html" class="btn">try it!</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item overlay">
+                    <img src="/images/carousel_2.webp" class="d-block w-100" alt="carousel 2">
+
+                    <div class="carousel-caption">
+                        <p class="title">It's Sweet!</p>
+
+                        <p class="caption">Cake with fluffy top, cheese cream and strawberry flavor.</p>
+
+                        <a href="./allProducts.html" class="btn">try it!</a>
+                    </div>
+                </div>
+              
+                <div class="carousel-item overlay">
+                    <img src="/images/carousel_3.webp" class="d-block w-100" alt="carousel 3">
+
+                    <div class="carousel-caption">
+                        <p class="title">It's Wonderful!</p>
+
+                        <p class="caption">Cupcakes and why not...Macaroons.</p>
+
+                        <a href="./allProducts.html" class="btn">try it!</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                <span class="visually-hidden">Next</span>
+            </button>  
+        </div>
+
+        <!-- About Section -->
+        <div class="story-container flex-column">
+            <p class="container-title">Our Story</p>
+
+            <span class="divider"></span>
+
+            <p class="container-subtitle">Une histoire d'une verre du vin…</p>
+
+            <p class="container-content">I was once in Paris at a family restaurant, intimate and cozy. One night, enjoying a glass of red wine and looking upon Tour Eiffel, it hit me a memorizing thought of creating an intriguing, yet astonishing cake shop. It all started when I fisrt tasted a Parisian Macaroon made out of fresh strawberries, cloudy, but yet crunchy at the first bite. Our pastries are inspired by this Parisian air that I manage to pick up when tasting this divine Parisian Macaroon. Therefore, we invite you to try pure pastries and get inspire by the French air that dominates our store concept.</p>
+        </div>
+
+        <!-- Best Sellers-->
+        <div class="best-sellers-container flex-column">
+            <p class="container-title">Popular Products</p>
+
+            <span class="divider"></span>
+
+            <div id="products-container"></div>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="special-box-container justify-content-center flex-column">
+            <p class="container-title">Design your Box</p>
+
+            <span class="divider"></span>
+
+            <div class="box-container d-flex align-items-center justify-content-around">
+                <div class="box-content d-flex align-items-start flex-column">
+                    <p>We offer you the freedom to design your own delivery box. Customized it by glancing through our templates or come with your own idea.</p>
+
+                    <a href="./spacialBox.html" class="btn">get it!</a>
+                </div>
+
+                <img class="img-fluid" src="./images/package-1.jpg" alt="Package box" width="300" />
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-container justify-content-around">
+            <div class="box-content d-flex flex-column">
+                <p class="container-title">Sign up for Newsletter</p>
+
+                <p>Get e-mail updates about our special offers.</p>
+            </div>
+
+            <div class="subscribe-form d-flex">
+                <input type="text" placeholder="Your e-mail address" id="emailField">
+
+                <button class="btn text-uppercase" onclick="writeData()">Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="footer-container">
+            <div class="social-media-container">
+                <a class="social-media-link" href=""><img src="./images/Facebook.svg" alt="Facebook" /></a>
+
+                <a class="social-media-link" href=""><img src="./images/Instagram.svg" alt="Instagram" /></a>
+
+                <a class="social-media-link" href=""><img src="./images/Twitter.svg" alt="Twitter" /></a>
+            </div>
+
+            <p>copyright &copy;2021-2022 macaroon cake shop. all rights reserved.</p>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

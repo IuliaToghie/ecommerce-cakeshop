@@ -1,0 +1,38 @@
+{
+  "name": "e-commerce-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./script/script.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "author": "iulia",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "firebase": "^9.8.3",
+    "webpack-dev-server": "^4.9.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "npm-check-updates": "^15.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
